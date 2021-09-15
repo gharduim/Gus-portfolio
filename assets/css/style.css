@@ -1,0 +1,255 @@
+:root {
+    --white: #fff;
+    --black: #000000;
+    --blue: #0071BC;
+    --darkgray: #535c68;
+}
+
+::selection {
+   background-color: var(--blue);
+   color: var(--blue);
+}
+/*universal selector - defines the whole page with box-sizing to border-box, padding to default and margin to default*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
+    Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: var(--darkgray);
+    color: var(--white);
+}
+a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  color: var(--white);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1{
+  font-size: 3.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+h4 {
+  font-size: 3rem;
+}
+
+main {
+    width: 96%;
+    margin: 2rem auto;
+}
+  
+footer {
+    margin: 2rem;
+    text-align: center;
+}
+
+/* Class selector - Defines the characteristics of the header element*/
+.header {
+    padding: 20px;
+    color:  var(--white);
+}
+
+/* Class selector - Defines the characteristics of the H1 element inside the header*/
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+}
+
+/* Class selector - Defines the characteristics of the div element inside the header*/
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+}
+
+/* Class selector - Defines the characteristics of the unordered list tag */
+.header div ul {
+    /* Specifies the type of list-item marker in a list. */
+    list-style-type: none;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/* Class selector - Defines a list item*/
+.header div ul li {
+    display: inline-block;
+    /* Set the left margin for an element to 25 pixels */
+    margin-left: 25px;
+}
+
+.float-right {
+  /* The element floats the right of its container*/
+  float: right;
+  /* Set the left margin for an element to 25 pixels*/
+  margin-left: 25px;
+}
+
+h1.student{
+    color: var(--blue);
+    margin: 2rem;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-left: 3.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.border {
+  border-left: solid var(--blue);
+}
+
+.container1{
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.container1 img{ 
+  height: auto;
+  border-radius: 20%;
+  max-width: 270px;
+  margin-top: 2rem;
+}
+.content1{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+}
+
+.about-me{
+    margin: 4rem;
+    width: 3rem;
+}
+
+.about-cont{
+  margin: 1.5rem;
+  width: 85%;
+  font-size: 23px;
+}
+
+.content2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: baseline;
+    text-align: center;
+}
+
+.content3{
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: var(--blue);
+}
+
+.contact-me{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 2rem;
+}
+.contact-me > li{
+  margin: 1rem;
+}
+
+.card-column {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+    /* when the screen resizes, make it so our columns don't jump in size */
+    transition: flex-basis 500ms linear;
+    margin-bottom: 1.5rem;
+  }
+
+.imagem1{
+  background-image: url("../img/background.jpg");
+  background-position: left;
+}
+/* make each code card a flexbox column to align and justify content within it */
+.code-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: 2rem;
+  color: var(--blue); 
+  /* outline is like border, but on the outside of the box instead of inside */
+  outline: 2px solid var(--white);
+  outline-offset: -2px;
+  transition: all 0.5s ease-in-out;
+ }
+  
+.code-card .card-header {
+  /* use position and negative margins to move title of card over the card's outline and create an overlap effect */
+  position: relative;
+  margin: 0rem 0 1.5rem 0;
+  padding: 0.5rem 1rem;
+  color: var(--blue);
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}
+  
+  /* set an outer and inner drop shadow on the card to create a glowing effect on hover */
+.code-card:hover {
+  box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
+}
+  
+  /* each card's code block grows to the height of the largest code block on the page, making each card even in height */
+.code-card .code-block {
+  flex-grow: 1;
+}
+
+/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
+@media screen and (min-width: 768px) {
+  /* on tablets, set columns to only be 50% of the width and not grow */
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
