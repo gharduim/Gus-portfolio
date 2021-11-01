@@ -1,145 +1,216 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Gus Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.6.1/font/bootstrap-icons.min.css"
+    integrity="sha512-9a1QYep56cYgIPFq0JYfsh9xRYYmPBxKaD6/ZfVAtplQ6y9ZUSk7GxgC2dmwtxK9T2cGQOxCV6J2Ll51nrvP2w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <title>Gustavo Harduim</title>
 </head>
 
 <body>
-    <header>
-        <div class="header">
-            <h1>Gustavo Harduim</h1>
-            <div class="float-right">
-                <ul>
-                    <li>
-                        <a href="#about-me" class="header-a">About me</a>
-                    </li>
-                    <li>
-                        <a href="#work" class="header-a">Work</a>
-                    </li>
-                    <li>
-                        <a href="#contact-me" class="header-a">Contact Me</a>
-                    </li>
-                </ul>
+  <div id="section1">
+    <nav class="navbar navbar-expand-lg" id="navContainer">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse d-flex justify-content-end fixed-top" id="navbarSupportedContent">
+          <ul class="nav nav-tabs navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link navBtn active" aria-current="page" href="#header">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navBtn" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navBtn" href="#project">Works</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link navBtn" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="d-flex justify-content-center h-100">
+      <header id="header">
+        <h1 id="name">Gustavo Harduim</h1>
+        <h2 class="text-center">
+          A full stack web developer with a warehouse background
+        </h2>
+      </header>
+    </div>
+  </div>
+
+  <main class="container">
+    <div class="container-header" id="about">
+      <h1>About Me</h1>
+    </div>
+    <section class="about">
+      <img src="assets/img/guhavatar.jpg" alt="avatar" id= "avatar"/>
+      <p class="phar"> Hello, my name is Gustavo Harduim, and I am based in Adelaide and web development student, originally from Brazil. 
+        I am learning how to create beautiful and functional websites for business or personal users. Below are some of my work until now.
+      </p>
+      <a href="./Gustavo-Harduim-Resume.pdf"  download ="Gustavo-Harduim-CV">
+        <button class="btn"><i class="fa fa-download"></i> Download <br> My CV</button>
+      </a>
+    </section>
+    <div class="container-header" id="project">
+      <h1>Works</h1>
+    </div>
+
+    <section class="projects">
+      <div class="row row-cols-1 row-cols-md-1 row-cols-lg-3 g-4">
+        <div class="col project-card">
+          <div class="card mb-3 card-back text-white" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 w-100">
+                <img src="./assets/img/dayMaker.jpg" class="img-fluid rounded" alt="..." />
+              </div>
+              <div class="col-md-8 text-center w-100">
+                <div class="card-body cardTop">
+                  <h5 class="card-title">Day Maker</h5>
+                  <p class="card-text">
+                    First project at Bootcamp with contributors.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">HTML5, CSS3, JavaScript, APIs, UIkit</small>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end p-2">
+                <a href="https://github.com/gharduim/Magpies-Project-1" class="card-link" target="_blank">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-github text-white"></i>
+                  </button>
+                </a>
+                <a href="https://gharduim.github.io/Magpies-Project-1/" class="card-link" target="_blank">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-house text-white"></i>
+                  </button>
+                </a>
+              </div>
             </div>
-        </div>
-    </header>
-    
-    <main>
-        <div class="container1">
-            <h1 class="student">Student of Web development</h1>
-            <h2>Believe in yourself. Your limitation... <br> It's only your imagination.</h2>
-            <img src="./assets/img/guhavatar.jpg" alt="Gustavo Profile Photo">  
+          </div>
         </div>
 
-        <div class="content1">
-            <h2 id="about-me" class="about-me">About Me</h2>
-            <div class="border row">
-                <p class="about-cont">Hello, my name is Gustavo Harduim, and I am based in Adelaide and web development student, originally from Brazil. I am learning how to create beautiful and functional websites for business or personal users. Below are some of my work until now.</p>
+        <div class="col project-card">
+          <div class="card mb-3 text-white card-back" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4 w-100">
+                <img src="./assets/img/weatherDashboard.jpg" class="img-fluid rounded" alt="Weather"/>
+              </div>
+              <div class="col-md-8 text-center w-100">
+                <div class="card-body cardTop">
+                  <h5 class="card-title">Weather Dashboard</h5>
+                  <p class="card-text">
+                    A weather dashboard app that shows the weather and the forecast for the next 5 days.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">HTML5, CSS3, JavaScript, APIs,
+                      Bootstrap</small>
+                  </p>
+                </div>
+              </div>
+              <div class="d-flex justify-content-end p-2">
+                <a href="https://github.com/gharduim/weather-dashboard/" class="card-link">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-github text-white"></i>
+                  </button>
+                </a>
+                <a href="https://gharduim.github.io/weather-dashboard/" class="card-link" >
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-house text-white"></i>
+                  </button>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
 
-        
-        <div class="content2"> 
-            <h2 id="work" class="about-me">Work</h2>
-            <section class="row justify-center border">
-                <div class="card-column1">
-                    <a href="https://gharduim.github.io/Search-engines/" class="card code-card imagem1">
-                        <h2 class="card-header">Horiseon</h2>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
+        <div class="col project-card">
+          <div class="card mb-3 card-back text-white" style="max-width: 540px">
+            <div class="row g-0 ">
+              <div class="col-md-4 w-100">
+                <img src="./assets/img/codingQuiz.jpg" class="img-fluid rounded" alt="Quiz" />
+              </div>
+              <div class="col-md-8 text-center w-100">
+                <div class="card-body cardTop">
+                  <h5 class="card-title">Coding Quiz</h5>
+                  <p class="card-text">
+                    A coding quiz that you can save your high
+                    scores.
+                  </p>
+                  <p class="card-text">
+                    <small class="text-muted">HTML5, CSS3, JavaScript</small>
+                  </p>
                 </div>
-
-                <div class="card-column">
-                    <a href="#" class="card code-card">
-                        <h3 class="card-header">Work 1</h3>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-column">
-                    <a href="#" class="card code-card">
-                        <h3 class="card-header">Work 2</h3>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-column">
-                    <a href="#" class="card code-card">
-                        <h3 class="card-header">Work 3</h3>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
-                </div>
-                
-                <div class="card-column">
-                    <a href="#" class="card code-card">
-                        <h3 class="card-header">Work 4</h3>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="card-column">
-                    <a href="#" class="card code-card">
-                        <h3 class="card-header">Work 5</h3>
-                        <div class="card-body">
-                        <p>HTML and CSS</p>
-                        </div>
-                    </a>
-                </div>
-
-            </section>
-        </div>
-
-        <div class="content3">
-            <h4 id="contact-me">Contact Me</h4>
-            <div>
-                <ul  class="contact-me">
-                    <li>
-                        <a href="tel:+61-424-920-690">
-                            <i class="fa fa-phone" aria-hidden="true" style="font-size:36px;"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:gharduim@gmail.com">
-                            <i class="material-icons" style="font-size:36px">email</i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/gharduim">
-                            <i class="fa fa-github" style="font-size:36px"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/gustavo-harduim-51160679/">
-                            <i class="fa fa-linkedin-square" style="font-size:36px"></i>
-                        </a>
-                    </li>
-                </ul>
+              </div>
+              <div class="d-flex justify-content-end p-2">
+                <a href="https://github.com/gharduim/Coding-Quiz" class="card-link" target="_blank">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-github text-white"></i>
+                  </button>
+                </a>
+                <a href="https://gharduim.github.io/Coding-Quiz/" class="card-link" target="_blank">
+                  <button type="button" class="btn btn-outline-secondary">
+                    <i class="bi bi-house text-white"></i>
+                  </button>
+                </a>
+              </div>
             </div>
+          </div>
         </div>
-    </main>
+      </div>
+    </section>
 
-    <footer>
-        <div class="footer">
-            <h5>Made with ❤️️ by Gus</h5>
-        </div>
-    </footer>
+    <div class="container-header" id="contact">
+      <h1>Contact me!</h1>
+    </div>
+    <div class="m-4">
+      <button type="button" class="btn btn-outline-secondary" title="Gustavo's email">
+        <a href="mailto:gharduim@gmail.com" title="gustavoharduim on Email" target="_blank">
+          <i class="bi bi-envelope text-white"></i>
+        </a>
+      </button>
+      <button type="button" class="btn btn-outline-secondary" title="Gustavo Harduim on GitHub">
+        <a href="https://github.com/gharduim" title="gustavoharduim on GitHub" target="_blank">
+          <i class="bi bi-github text-white"></i>
+        </a>
+      </button>
+      <button type="button" class="btn btn-outline-secondary" title="Gustavo Harduim's resume on LinkedIn">
+        <a href="https://www.linkedin.com/in/gustavo-harduim/" title="Gustavo Harduim's resume on LinkedIn" target="_blank">
+          <i class="fab fa-linkedin text-white"> </i>
+        </a>
+      </button>
+    </div>
+    <p class="text-white">©️ 2021 Gustavo Harduim</p>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>

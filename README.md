@@ -1,6 +1,6 @@
 # Gus Portfolio
 
-## Homework - week 2
+## Homework - week 7
 
 ## Short description
 
@@ -8,37 +8,35 @@ Create a portfolio will help me to make a personal self-assessment of my work, w
 
 The self-knowledge resulting from this process of creating my portfolio will help me answer questions more easily when going through interviews. The portfolio itself, when well constructed, serves to prove qualities such as organization, communication and skills related to the field of study I intend to study or the career I want to pursue.
 
-
-## Table of Contents 
+## Table of Contents
 
 - [Screenshots](#screenshots)
-- [HTML](#html)
-- [CSS](#css)
+- [Technologies](#technologies)
 - [Github](#github)
 
 ## Screenshots
 
-![Gus portfolio1](./assets/screenshots/Gus-Portfolio1.jpg "Portfolio part 1")
+![Gus header](./assets/screenshots/header.jpg "Portfolio header")
 
-![Gus portfolio2](./assets/screenshots/Gus-Portfolio2.jpg "Portfolio part 2")
+![Gus about](./assets/screenshots/about.jpg "Portfolio about me")
 
-## HTML
+![Gus works](./assets/screenshots/works.jpg "Portfolio works")
 
-I have created a portfolio with my name, an avatar and links to sections about them in the navigation. 
+![Gus contact](./assets/screenshots/contact.jpg "Portfolio contact")
 
-I have created links to my past works and my contacts.
+## Technologies
 
-## CSS 
-
-I have created css file and I tried keep the code as clean as possible.
+- HTML
+- JAVASCRIPT
+- CSS
+- Bootstrap
 
 ## Github
 
-1. I have created a new repository on your GitHub account and clone it to my computer.
+1. I have created a new repository on your GitHub account and cloned it to my computer.
 
 2. I used the `git add`, `git commit`, and `git push` commands to save and push my code to my GitHub repository.
 
 3. My repository is https://github.com/gharduim/Gus-portfolio
 
 4. My live webpage is https://gharduim.github.io/Gus-portfolio/
-

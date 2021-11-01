@@ -1,261 +1,213 @@
-:root {
-  --white: #fff;
-  --black: #000000;
-  --blue: #0071BC;
-  --darkgray: #535c68;
-}
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
-::selection {
- background-color: var(--blue);
- color: var(--blue);
-}
-/*universal selector - defines the whole page with box-sizing to border-box, padding to default and margin to default*/
 * {
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
+}
+
+li {
+  list-style-type: none;
 }
 
 body {
-  /* Sans Serif font stack is implemented to help select the best font for each type of computer operating system */
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica,
-  Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
-  background-color: var(--darkgray);
-  color: var(--white);
-}
-a {
-  color: var(--white);
-  text-decoration: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-margin-bottom: 0.625rem;
-color: var(--white);
-font-weight: 700;
-line-height: 1.1;
-}
-
-h1{
-font-size: 3.5rem;
-}
-
-h2 {
-  font-size: 2rem;
+  position: relative;
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,98,1) 100%);
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.4em;
 }
 
-h4 {
-font-size: 3rem;
+.navBtn {
+  color: white;
 }
 
-main {
-  width: 96%;
-  margin: 2rem auto;
+header {
+  font-size: 1.5em;
+  font-family: "Montserrat", sans-serif;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#name {
+  font-size: 4em;
+  text-align: center;
+  letter-spacing: 0.125em;
+  color: white;
+
+  margin-bottom: 30px;
+}
+
+header h2 {
+  font-family: "Poppins", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: normal;
+}
+
+#avatar {
+  max-width: 35%;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 3px;
+  border-color: #161a26;
+}
+
+#section1 {
+  background-image: url("../img/background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+
+.btn {
+  background-color: #0071BC;;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+
+.card-back{
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,1) 0%, rgba(97,97,98,1) 100%);
+}
+
+.cardTop {
+  height: 200px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 0vw;
+  padding: 50px 0;
+  width: 60vw;
+}
+
+.container #intro-text {
+  text-align: center;
+  max-width: 85%;
+  padding: 50px 0;
+  color:  rgb(0, 48, 151);;
+
+  font-size: 1.25em;
+  letter-spacing: 2px;
+  line-height: 35px;
+}
+
+.container .projects {
+  display: flex;
+  flex-flow: row wrap;
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.container-header {
+  border-top: 8px dotted #0071BC;;
+  border-radius: 5px;
+  color: #0071BC;
+  text-align: center;
+  margin-top: 150px;
+}
+
+.project-card:hover {
+  box-shadow: inset 0px 0px 8px white, 0 0 15px white;
+}
+  
+.about {
+  display: flex;
+  flex-direction: column;
+  max-width: 85%;
+  line-height: 30px;
+  color: white;
+  justify-content: center;
+  align-items: center;
+}
+
+.phar {
+  font-size: 1.25em;
+  text-align: center;
+  letter-spacing: 1px;
+  line-height: 40px;
+}
+
+.about img {
+  margin-bottom: 30px;
+}
+
+.contact {
+  margin-bottom: 150px;
+  width: 40vw;
 }
 
 footer {
-  margin: 2rem;
-  text-align: center;
-}
-
-/* Class selector - Defines the characteristics of the header element*/
-.header {
-  padding: 20px;
-  color:  var(--white);
-}
-
-/* Class selector - Defines the characteristics of the H1 element inside the header*/
-.header h1 {
-  display: inline-block;
-  font-size: 48px;
-}
-
-/* Class selector - Defines the characteristics of the div element inside the header*/
-.header div {
-  padding-top: 15px;
-  margin-right: 20px;
-  float: right;
-}
-
-/* Class selector - Defines the characteristics of the unordered list tag */
-.header div ul {
-  /* Specifies the type of list-item marker in a list. */
-  list-style-type: none;
-  font-size: 30px;
-  text-decoration: none;
-}
-
-/* Class selector - Defines a list item*/
-.header div ul li {
-  display: inline-block;
-  /* Set the left margin for an element to 25 pixels */
-  margin-left: 25px;
-}
-
-.float-right {
-/* The element floats the right of its container*/
-float: right;
-/* Set the left margin for an element to 25 pixels*/
-margin-left: 25px;
-}
-
-h1.student{
-  color: var(--blue);
-  margin: 2rem;
-}
-
-.row {
-display: flex;
-flex-wrap: wrap;
-flex-direction: row;
-margin-left: 3.5rem;
-margin-right: -1.5rem;
-}
-
-.justify-center {
-justify-content: center;
-}
-
-.border {
-border-left: solid var(--blue);
-}
-
-.container1{
-display: block;
-flex-basis: 0;
-flex-grow: 1;
-flex-shrink: 1;
-padding: 0.75rem;
-text-align: center;
-}
-
-.container1 img{ 
-height: auto;
-border-radius: 20%;
-max-width: 270px;
-margin-top: 2rem;
-}
-.content1{
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-}
-
-.about-me{
-  margin: 4rem;
-  width: 3rem;
-}
-
-.about-cont{
-margin: 1.5rem;
-width: 85%;
-font-size: 23px;
-}
-
-.content2{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: baseline;
-  text-align: center;
-}
-
-.content3{
-  text-align: center;
-  text-decoration: underline;
-  text-decoration-color: var(--blue);
-}
-
-.contact-me{
-  display: flex;
-  flex-direction: row;
+  align-items: center;
   justify-content: center;
-  margin: 2rem;
-}
-.contact-me > li{
-margin: 1rem;
-}
-.card-column1 {
-flex: 1 0 100%;
-padding: 1.5rem;
-/* when the screen resizes, make it so our columns don't jump in size */
-transition: flex-basis 500ms linear;
-margin-bottom: 1.5rem;
-}
-.card-column {
-  flex: 1 0 100%;
-  padding: 1.5rem;
-  /* when the screen resizes, make it so our columns don't jump in size */
-  transition: flex-basis 500ms linear;
-  margin-bottom: 1.5rem;
+  background-color:  rgb(0, 48, 151);;
+  width: 100vw;
+  height: 7vh;
+  text-align: center;
+  font-size: 1em;
 }
 
-.imagem1{
-background-image: url("../img/background.jpg");
-background-position: left;
-}
-/* make each code card a flexbox column to align and justify content within it */
-.code-card {
-display: flex;
-flex-direction: column;
-justify-content: flex-start;
-min-height: 120%;
-padding: 2rem;
-color: var(--blue); 
-/* outline is like border, but on the outside of the box instead of inside */
-outline: 2px solid var(--white);
-outline-offset: -2px;
-transition: all 0.5s ease-in-out;
+footer p {
+  padding-right: 5px;
 }
 
-.code-card .card-header {
-/* use position and negative margins to move title of card over the card's outline and create an overlap effect */
-position: relative;
-margin: 0rem 0 1.5rem 0;
-padding: 0.5rem 1rem;
-color: var(--blue);
-border-radius: 8px;
-transition: all 0.5s ease-in-out;
+footer .social a {
+  font-size: 1em;
+  padding: 3px;
 }
 
-/* set an outer and inner drop shadow on the card to create a glowing effect on hover */
-.code-card:hover {
-box-shadow: inset 0px 0px 8px var(--white), 0 0 15px var(--white);
+/* Small devices */
+@media screen and (max-width: 376px) {
+  body {
+    font-size: 16px;
+  }
+  #name {
+    font-size: 3em;
+  }
+
+  #navbarSupportedContent {
+    display: flex !important;
+    justify-content: start !important;
+  }
 }
 
-/* each card's code block grows to the height of the largest code block on the page, making each card even in height */
-.code-card .code-block {
-flex-grow: 1;
-}
-
-/* using a mobile-first approach, use `min-width` values going from narrow -> wide for a responsive design */
-@media screen and (min-width: 768px) {
-/* on tablets, set columns to only be 50% of the width and not grow */
-.card-column {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-
-/* select the last child to grow to full width if it has space to grow */
-.card-column:last-child {
-  flex-grow: 1;
-}
-}
-
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-
-.card-column {
-  flex: 0 0 33.333%;
-  max-width: 33.333%;
-}
+/* Medium Devices */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
 }
