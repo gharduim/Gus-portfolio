@@ -1,7 +1,5 @@
 # Gus Portfolio
 
-## Homework - week 7
-
 ## Short description
 
 Create a portfolio will help me to make a personal self-assessment of my work, what I want to achieve with it and where to direct it going forward. By curating the selection and collection of my best work, I will identify my skills gained through various experiences and what my inspirations are, and organize them in a way that facilitates the understanding of their evolution.
@@ -20,7 +18,7 @@ The self-knowledge resulting from this process of creating my portfolio will hel
 
 ![Gus about](./assets/screenshots/about.jpg "Portfolio about me")
 
-![Gus works](./assets/screenshots/works.jpg "Portfolio works")
+![Gus works](./assets/screenshots/works1.jpg "Portfolio works")
 
 ![Gus contact](./assets/screenshots/contact.jpg "Portfolio contact")
 
